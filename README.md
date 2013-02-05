@@ -1,5 +1,6 @@
 Lightgrid
 =========
+Version 0.4
 
 A simple no-brainer fluid css grid system to use in your project.
 This grid borrows heavily from 1140px grid system by andy taylor and boostrap framework's grid system.
