@@ -12,6 +12,7 @@ Menu :
 [================================*/
 
 /* $RESET
+
 Reset section starts here
 Delete this section if you use a custom normalize css or reset css 
 */
@@ -88,6 +89,7 @@ table {
 }
 
 /* $LIGHTGRID
+
 Lightgrid section starts here
 Be sure to delete all the unnecessary classes in they are not needed
 */
@@ -225,6 +227,7 @@ img
 }
 
 /* $MEDIA-QUERY
+
 Lightgrid section starts here
 Delete this section if media queries are not needed
 */
