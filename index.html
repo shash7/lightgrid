@@ -4,35 +4,119 @@
 	Lightgrid | Simple and fluid css grid
 	</title>
 	<link href="css/lightgrid.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
 </head>
 
-<body>
-<div class="content">
-	<h1>
-	Simplegrid
-	</h1>
-	<br />
-	<div class="row">
-		<div class="col-3">
-		Three
-		</div>
-		<div class="col-3">
-		Three
-		</div>
-		<div class="col-3">
-		Three
-		</div>
-		<div class="col-3 last">
-		Three
+<body id="wrapper" class="row">
+<div class="main col-8 offset-2">
+	<div class="content">
+		<h1 class="center">
+		Lightgrid
+		</h1>
+		<br />
+		<br />
+		<p>
+		A simple, fluidic and responsive 12 column grid system for css.<br />
+		<br />
+		Lightgrid css will divide your page into 12 columns. You can arrange the divs to take up column space by adding <span class="code">
+		col-*</span> classes.
+		<br />
+		One thing: Don't forget to add the <span class="code">.last</span> class in your last div.
+		</p>
+		<br />
+		<h2>
+		Try it now
+		</h2>
+		<p>
+		First, add lightgrid.css in your html file.
+		<br />
+		Add <span class="code">&lt;div class=&quot;row&quot;&gt;&lt;/div&gt;</span> in your file.
+		<br />
+		Example:
+		<br />
+		<span class="code">
+				&lt;div class=&quot;row&quot;&gt;<br/>			&lt;div class=&quot;col-5&quot;&gt;<br/>			col-5<br/>			&lt;/div&gt;<br/>			&lt;div class=&quot;col-5&quot;&gt;<br/>			col-5				<br/>			&lt;div class=&quot;col-2 last&quot;&gt;<br/>			col-2 last<br/>			&lt;/div&gt;<br/>		&lt;/div&gt;
+		</span>
+		</p>
+		<br />
+	</div>
+	<div class="example">
+		<div class="row">
+			<div class="col-5">
+			col-5
+			</div>
+			<div class="col-5">
+			col-5
+			</div>
+			<div class="col-2 last">
+			col-2 last
+			</div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-7 offset-1">
-		Seven
+	<div class="content">
+		<h2>
+		Extras
+		</h2>
+		<br />
+		<h3>
+		Offsetting
+		</h3>
+		<p>
+		You can also offset a div by any number of columns.
+		<br />
+		You can do this by adding <span class="code">offset-*</span> in your div class.
+		<br /><br />
+		Example:
+		<br />
+		<span class="code">
+		&lt;div class=&quot;row&quot;&gt;<br/>			&lt;div class=&quot;col-4 offset-4&quot;&gt;<br/>			col-4 offset-4<br/>			&lt;/div&gt;<br/>			&lt;div class=&quot;col-2 offset-2 last&quot;&gt;<br/>			col-2 offset-2<br/>			&lt;/div&gt;<br/>		&lt;/div&gt;
+		</span>
+		</p>
+	</div>
+	<div class="example">
+		<div class="row">
+			<div class="col-4 offset-4">
+			col-4 offset-4
+			</div>
+			<div class="col-2 offset-2 last">
+			col-2 offset-2 last
+			</div>
 		</div>
-		<div class="col-1 offset-3 last">
-		One
+	</div>
+	<div class="content">
+		<h3>
+		Images
+		</h3>
+		Images are responsive and resize according to the parent element's size.
+	</div>
+	<div class="example">
+		<div class="row">
+			<div class="col-6">
+			<img src="img/kitty.jpg" alt="cats" />
+			</div>
+			<div class="col-6 last">
+			col-6 last
+			</div>
 		</div>
+	</div>
+	<div class="content">
+		<h3>
+		Trimming
+		</h3>
+		<p>
+		If you are sure you don't need to change the layout of your website, remove the extra classes in lightgrid.css. This will remove the clutter from your css file.
+		<br />
+		Also, take a look under the hood and delete and sections you don't need in your site. For example, if you are already using a reset or normalize css then remove the first section of 
+		lightgrid.css
+		</p>
+		<br />
+		<h2>
+		Credits
+		</h2>
+		<p>
+		Lightgrid is made shash7.<br />
+		This grid system borrows heavily from andy taylor's 1140px grid and bootstrap's fluid grid.<br />
+		</p>
 	</div>
 </div>
 </body>

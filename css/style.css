@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'OstrichSansMedium';
+    src: url('fonts/ostrich-regular-webfont.eot');
+    src: url('fonts/ostrich-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ostrich-regular-webfont.woff') format('woff'),
+         url('fonts/ostrich-regular-webfont.ttf') format('truetype'),
+         url('fonts/ostrich-regular-webfont.svg#OstrichSansMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	font-family:'OstrichSansMedium', Verdana, Geneva, sans-serif;
+	text-shadow: 0px 1px 2px #ffffff;
+  filter: dropshadow(color=#ffffff, offx=0, offy=1);
+	color:#002448;
+}
+
+h1
+{
+	font-size:88px;
+}
+
+h2
+{
+	font-size:56px;
+}
+
+h3
+{
+	font-size:40px;
+}
+
+body
+{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#222;
+}
+
+p
+{
+	line-height:1.5em;
+	font-size:18px;
+}
+
+.main.row
+{
+	margin-top:12px;
+	margin-bottom:12px;
+	
+	-webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.main .row > div
+{
+	background-color:#FB3F00;
+	color:#fff;
+	
+	padding:12px;
+	
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:14px;
+	text-align:center;
+	letter-spacing:1px;
+	
+	-webkit-border-radius: 2px;
+  border-radius: 2px;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#wrapper
+{
+	background-image:url(../img/noisy_net.png);
+	background-repeat:repeat;
+}
+
+.main
+{
+	background-color:#FEF4D3;
+	
+	-webkit-box-shadow:  0px 0px 8px 2px rgba(0, 0, 0, 0.3); 
+  box-shadow:  0px 0px 8px 2px rgba(0, 0, 0, 0.3);
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.content
+{
+	margin: 0 auto;
+	width:80%;
+	padding:12px 10px;
+}
+
+.example
+{
+	background-image:url(../img/noisy_net.png);
+	background-repeat:repeat;
+	
+	padding:8px 0px;
+	
+	-webkit-box-shadow: inset 0px 0px 6px 2px rgba(0, 0, 0, 0.2);
+   box-shadow: inset 0px 0px 6px 2px rgba(0, 0, 0, 0.2);
+}
+
+.code
+{
+	padding:2px 6px;
+	vertical-align:middle;
+	white-space: nowrap;
+	display:inline-block;
+	color:#FB3F00;
+	font-size:14px;
+	font-family:"Lucida Console", Monaco, monospace;
+	
+	background-image:url(../img/noisy_net.png);
+	background-repeat:repeat;
+	
+	-webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.center
+{
+	text-align:center;
+}

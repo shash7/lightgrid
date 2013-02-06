@@ -1,10 +1,18 @@
-/* ------------------------------------------------------
+/*================================]
 Lightgrid css by shash7
-
+Version 0.5
 Project on github https://github.com/shash7/lightgrid
-------------------------------------------------------*/
 
-/* Simple css reset
+Menu :
+
+	$RESET
+	$LIGHTGRID
+	$MEDIA-QUERY
+
+[================================*/
+
+/* $RESET
+Reset section starts here
 Delete this section if you use a custom normalize css or reset css 
 */
 
@@ -48,30 +56,46 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+html, body
+{
+	width:100%;
+	height:100%;
+}
+
 body {
 	line-height: 1;
 	font-family:Arial, Helvetica, sans-serif;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
-/* Lightgrid starts here */
+/* $LIGHTGRID
+Lightgrid section starts here
+Be sure to delete all the unnecessary classes in they are not needed
+*/
 
 .row {
-	width: 100%;
+	width: 96%; /* Change this to 100% if left and right gutter is not needed */
+	height: 1%;
+	margin: 0 auto;
 }
 
 .row:after
@@ -151,12 +175,12 @@ table {
 
 .offset-4
 {
-	margin-left:25.5%;
+	margin-left:34%;
 }
 
 .offset-5
 {
-	margin-left:34%;
+	margin-left:42.5%;
 }
 
 .offset-6
@@ -189,10 +213,32 @@ table {
 	margin-left:93.5%;
 }
 
-.last {
+.row .last
+{
 	margin-right: 0;
 }
 
-img {
+img
+{
+	max-width:100%;
 	height: auto;
+}
+
+/* $MEDIA-QUERY
+Lightgrid section starts here
+Delete this section if media queries are not needed
+*/
+
+@media only screen and (min-width : 1px)and (max-width : 768px)
+{
+	
+	.row
+	{
+	}
+	
+	.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12
+	{
+		margin:0;
+		width:100%!important;
+	}
 }
