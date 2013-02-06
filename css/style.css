@@ -48,6 +48,12 @@ ul > li, ol > li
 a
 {
 	color:#FB3F00;
+	
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
 }
 
 a:hover
