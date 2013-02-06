@@ -8,4 +8,5 @@ This grid borrows heavily from 1140px grid system by andy taylor and boostrap fr
 It is designed to be as small as possible. It is made to be integrated in your projects.
 
 Lightgrid is a 12 column css grid. Grids are semantically named.
+To use: make a container div and apply a 'row' class. Now name div 
 

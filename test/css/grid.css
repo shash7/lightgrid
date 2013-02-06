@@ -1,0 +1,121 @@
+.row
+{
+	width:100%;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	outline:#CCC solid 1px;
+	height:54px;
+}
+
+.row:after
+{
+	content:'';
+	display:block;
+	clear:both;
+}
+
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol
+{
+	margin-right:2%;
+	height:100%;
+	line-height:64px;
+}
+
+.onecol
+{
+	width:6.5%;
+	float:left;
+	text-align:center;
+}
+
+.twocol
+{
+	width:15%;
+	float:left;
+	text-align:center;
+}
+
+.threecol
+{
+	width:23.5%;
+	float:left;
+	text-align:center;
+}
+
+.fourcol
+{
+	width:32%;
+	float:left;
+	text-align:center;
+}
+
+.fivecol
+{
+	width:40.5%;
+	float:left;
+	text-align:center;
+}
+
+.sixcol
+{
+	width:49%;
+	float:left;
+	text-align:center;
+}
+
+.sevencol
+{
+	width:57.5%;
+	float:left;
+	text-align:center;
+}
+
+.eightcol
+{
+	width:66%;
+	float:left;
+	text-align:center;
+}
+
+.ninecol
+{
+	width:74.5%;
+	float:left;
+	text-align:center;
+}
+
+.tencol
+{
+	width:83%;
+	float:left;
+	text-align:center;
+}
+
+.elevencol
+{
+	width:91.5%;
+	float:left;
+	text-align:center;
+}
+.twelvecol
+{
+	width:100%;
+	float:left;
+	text-align:center;
+}
+
+.row .last
+{
+	margin-right:0%;
+}
+
+.spec
+{
+	background-color:#F30;
+	color:#FFF;
+}
+
+#gutter
+{
+	width:50%;
+}
