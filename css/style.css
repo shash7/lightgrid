@@ -47,7 +47,7 @@ ul > li, ol > li
 
 a
 {
-	color:#FB3F00;
+	color:#BF3202;
 	
 	-webkit-transition: all 250ms ease-in-out;
 	-moz-transition: all 250ms ease-in-out;
@@ -58,7 +58,7 @@ a
 
 a:hover
 {
-	color:#BF3202;
+	color:#FB3F00;
 }
 
 body
@@ -119,6 +119,14 @@ img
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding;
+	background-clip: padding-box;
+	
+	border:transparent solid 8px;
+	border-top:none;
+	border-bottom:none;
 }
 
 .content
@@ -145,7 +153,7 @@ img
 	vertical-align:middle;
 	white-space: nowrap;
 	display:inline-block;
-	color:#FB3F00;
+	color:#ff7d51;
 	font-size:13px;
 	font-family:"Lucida Console", Monaco, monospace;
 	
@@ -171,6 +179,16 @@ img
 .center
 {
 	text-align:center;
+}
+
+.top
+{
+	padding-top:72px;
+}
+
+.bottom
+{
+	padding-bottom:72px;
 }
 
 @media only screen and (min-width : 1px)and (max-width : 768px)
