@@ -110,6 +110,10 @@ Be sure to delete all the unnecessary classes in they are not needed
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
 	margin-right: 2%;
 	float: left;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .row .col-1 {
@@ -234,10 +238,6 @@ Delete this section if media queries are not needed
 
 @media only screen and (min-width : 1px)and (max-width : 768px)
 {
-	
-	.row
-	{
-	}
 	
 	.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12
 	{
