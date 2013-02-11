@@ -1,10 +1,8 @@
 /*================================]
 Lightgrid css by shash7
-Version 0.9.5
+Version 1.0.1
 Project on github https://github.com/shash7/lightgrid
-
 Menu :
-
 	$RESET
 	$LIGHTGRID
 	$MEDIA-QUERY
@@ -228,6 +226,12 @@ img
 {
 	max-width:100%;
 	height: auto;
+}
+
+/* Optinonal classes. Delete if not needed */
+.row.overflow
+{
+	overflow:hidden;
 }
 
 /* $MEDIA-QUERY

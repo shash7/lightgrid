@@ -1,6 +1,6 @@
 Lightgrid
 =========
-Version 1.0
+Version 1.0.1
 
 A simple no-brainer fluid css grid system to use in your project.
 It's aim is to remove the clutter and provide a simple but fluid grid.
