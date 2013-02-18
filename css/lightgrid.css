@@ -228,12 +228,29 @@ img
 	height: auto;
 }
 
+<<<<<<< HEAD
 /* Optinonal classes. Delete if not needed */
+=======
+/* Optinonal classes. Delete if not needed
+
+.overflow class makes all the overflowing elements inside .row hidde.
+.limit class limits your .row to a maximum of 1440px width
+
+*/
+>>>>>>> origin/master
 .row.overflow
 {
 	overflow:hidden;
 }
 
+<<<<<<< HEAD
+=======
+.row.limit
+{
+	max-width:1440px;
+}
+
+>>>>>>> origin/master
 /* $MEDIA-QUERY
 
 Lightgrid section starts here
