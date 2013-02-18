@@ -228,10 +228,20 @@ img
 	height: auto;
 }
 
-/* Optinonal classes. Delete if not needed */
+/* Optinonal classes. Delete if not needed
+
+.overflow class makes all the overflowing elements inside .row hidde.
+.limit class limits your .row to a maximum of 1440px width
+
+*/
 .row.overflow
 {
 	overflow:hidden;
+}
+
+.row.limit
+{
+	max-width:1440px;
 }
 
 /* $MEDIA-QUERY
