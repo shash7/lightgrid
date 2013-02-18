@@ -229,14 +229,20 @@ img
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* Optinonal classes. Delete if not needed */
 =======
+=======
+>>>>>>> origin/master
 /* Optinonal classes. Delete if not needed
 
 .overflow class makes all the overflowing elements inside .row hidde.
 .limit class limits your .row to a maximum of 1440px width
 
 */
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 .row.overflow
 {
@@ -244,12 +250,18 @@ img
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> origin/master
 .row.limit
 {
 	max-width:1440px;
 }
 
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 /* $MEDIA-QUERY
 

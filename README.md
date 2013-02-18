@@ -2,6 +2,11 @@ Lightgrid
 =========
 Version 1.0.1
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+http://shash7.github.com/lightgrid/
+___
+>>>>>>> origin/master
 =======
 http://shash7.github.com/lightgrid/
 ___
@@ -20,4 +25,8 @@ You can also offset a div to leave space on the left side. To do that, use 'offs
 Eg: div class='col-6 offset-2'
 
 For more information, refer to the index.html provided in the repo.
+<<<<<<< HEAD
 ___
+=======
+___
+>>>>>>> origin/master
