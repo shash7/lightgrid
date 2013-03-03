@@ -1,6 +1,6 @@
 Lightgrid
 =========
-Version 1.0.1
+Version 1.0.2
 http://shash7.github.com/lightgrid/
 ___
 
@@ -15,6 +15,8 @@ Don't forget to add the .last class in your last div.
 
 You can also offset a div to leave space on the left side. To do that, use 'offset-yourValue' as a class name.
 Eg: div class='col-6 offset-2'
+
+Adding .limit to .row class will limit the max width of .row to 1440px.
 
 For more information, refer to the index.html provided in the repo.
 ___
