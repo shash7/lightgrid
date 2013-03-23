@@ -39,12 +39,6 @@ ul, ol
 	margin-left:24px;
 }
 
-ul > li, ol > li
-{
-	margin-top:8px;
-	margin-bottom:8px;
-}
-
 a
 {
 	color:#BF3202;

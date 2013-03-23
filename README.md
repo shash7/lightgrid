@@ -1,20 +1,11 @@
 Lightgrid
 =========
-<<<<<<< HEAD
 Version 1.0.1
-<<<<<<< HEAD
-<<<<<<< HEAD
 =======
-=======
-Version 1.0.2
->>>>>>> origin/master
+Version 1.0.3
 http://shash7.github.com/lightgrid/
-___
->>>>>>> origin/master
 =======
-http://shash7.github.com/lightgrid/
-___
->>>>>>> origin/master
+
 
 A simple no-brainer fluid css grid system to use in your project.
 It's aim is to remove the clutter and provide a simple but fluid grid.
@@ -31,8 +22,6 @@ Eg: div class='col-6 offset-2'
 Adding .limit to .row class will limit the max width of .row to 1440px.
 
 For more information, refer to the index.html provided in the repo.
-<<<<<<< HEAD
 ___
 =======
 ___
->>>>>>> origin/master

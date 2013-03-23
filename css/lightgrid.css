@@ -1,4 +1,4 @@
-/*================================]
+/*--------------------------------
 Lightgrid css by shash7
 Version 1.0.2
 Project on github https://github.com/shash7/lightgrid
@@ -7,7 +7,7 @@ Menu :
 	$LIGHTGRID
 	$MEDIA-QUERY
 
-[================================*/
+----------------------------------*/
 
 /* $RESET
 
@@ -31,7 +31,7 @@ summary
 	display: block;
 }
 
-p, menu, ul, ol
+p, menu, ul, ol, dd, dl
 {
 	margin:0;
 	padding:0;
@@ -44,13 +44,13 @@ body
 	border: 0;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size: 100%;
-	line-height: 1;
+	line-height: 1.5;
 	vertical-align: baseline;
 }
 
+/* Typography */
 h1, h2, h3, h4, h5, h6
 {
-	line-height:1.1em;
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-weight:normal;
 	margin:0;
@@ -59,37 +59,55 @@ h1, h2, h3, h4, h5, h6
 
 h1
 {
-	font-size:3em;
+	font-size:60px;
+	line-height:72px;
 }
 
 h2
 {
-	font-size:2.5em;
+	font-size:48px;
+	line-height:54px;
+	margin-bottom:18px;
 }
 
 h3
 {
-	font-size:2em;
+	font-size:36px;
+	line-height:36px;
+	margin-bottom:18px;
 }
 
 h4
 {
-	font-size:1.5em;
+	font-size:30px;
+	line-height:36px;
+	margin-bottom:18px;
 }
 
 h5
 {
-	font-size:1.1em;
+	font-size:28px;
+	line-height:36px;
 }
 
 h6
 {
-	font-size:0.9em;
+	font-size:24px;
+	line-height:36px;
+}
+
+p
+{
+	font-size:13px;
+	line-height:18px;
+	margin-bottom:18px;
 }
 
 ol, ul
 {
 	list-style: none;
+	margin-left:1.5em;
+	margin-bottom:18px;
 }
 
 blockquote, q
@@ -264,37 +282,24 @@ img
 	margin-right: 0;
 }
 
-<<<<<<< HEAD
 img
 {
 	max-width:100%;
 	height: auto;
 }
 
-
-/* Optinonal classes. Delete if not needed */
-
-=======
->>>>>>> origin/master
-/* Optinonal classes. Delete if not needed
-
-.overflow class makes all the overflowing elements inside .row hidde.
-.limit class limits your .row to a maximum of 1440px width
-
-*/
-<<<<<<< HEAD
-
-.row.overflow
-{
-	overflow:hidden;
-}
-=======
->>>>>>> origin/master
-
+/* Helper classes. Delete em' if not needed */
 
 .row.limit
 {
 	max-width:1440px;
+}
+
+.clearfix:after
+{
+	content:'';
+	display:block;
+	clear:both;
 }
 
 
