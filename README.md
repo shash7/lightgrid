@@ -1,6 +1,6 @@
 # Lightgrid
 
-### Version 1.5
+### Version 1.5.1
 
 [shash7.github.com/lightgrid](http://shash7.github.com/lightgrid)
 

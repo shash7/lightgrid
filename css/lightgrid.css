@@ -4,18 +4,18 @@
  * 
  * Lightgrid css by shash7
  * Created under the MIT license
- * Version 1.5
+ * Version 1.5.1
  * Project on github https://github.com/shash7/lightgrid
  * 
  * Menu :
- *  $normalize
- *  $links
- *  $typography
- *  $embedded
- *  $grid
- *  $forms
- *  $utilities
- *  $media-queries
+ *  normalize
+ *  links
+ *  typography
+ *  embedded
+ *  grid
+ *  forms
+ *  utilities
+ *  media-queries
  * 
  * ----------------------------------------------------------------
  */
@@ -135,6 +135,10 @@ h4 {
 small,
 .font_small {
 	font-size: 0.707em;
+}
+
+p {
+	margin-bottom: 1.3em;
 }
 
 ol, ul {
