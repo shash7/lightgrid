@@ -1,6 +1,6 @@
 # Lightgrid
 
-### Version 1.5.1
+### Version 1.5.2
 
 [shash7.github.com/lightgrid](http://shash7.github.com/lightgrid)
 
@@ -25,3 +25,4 @@ For more information, refer to the index.html provided in the repo.
 - Integrated normalize.css
 - Better commenting
 - More consistent code
+- Added gulpfile

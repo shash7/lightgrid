@@ -1,0 +1,11 @@
+{
+  "name": "lightgrid",
+  "version": "1.5.2",
+  "author": "shash7",
+  "devDependencies": {
+    "gulp-minify-css": "~0.3.0",
+    "gulp-concat": "~2.1.7",
+    "gulp": "~3.5.5",
+    "gulp-rename": "~1.2.0"
+  }
+}
