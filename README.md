@@ -1,6 +1,6 @@
 # Lightgrid
 
-### Version 2.0.0
+### Version 2.0.1
 
 [shash7.github.com/lightgrid](http://shash7.github.com/lightgrid)
 
@@ -21,7 +21,11 @@ Adding .limit to .row class will limit the max width of .row to 1440px.
 
 For more information, refer to the index.html provided in the repo.
 
-###What's new
+###2.0.1
+- Added .last class for edge cases
+- Some minor changes
+
+###2.0.0
 - Almost a whole rewrite of the library
 - Added less css support
 - Updated to reflect the latest normalize.css changes

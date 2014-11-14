@@ -14,7 +14,7 @@
 h1, h2, h3, h4 {
 	font-family: @header-font;
 	color: @header-color;
-	font-weight: normal;
+	font-weight: @header-font-weight;
 }
 
 h1 {
@@ -61,14 +61,13 @@ p, ul, ol, pre, table, blockquote {
 }
 
 /* Sanitation */
-hr {
-  border: 1px solid;
-  margin: -1px 0;
-}
-
 ul ul, ol ol, ul ol, ol ul {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+b, strong {
+	font-weight: bold;
 }
 
 b, strong, em, small, code {
