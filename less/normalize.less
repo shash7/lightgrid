@@ -15,6 +15,7 @@
 
 html {
   font-family: @body-font; /* 1 */
+	font-weight: @body-font-weight;
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 	color: @body-color;
@@ -124,15 +125,6 @@ abbr[title] {
 }
 
 /**
- * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
- */
-
-b,
-strong {
-  font-weight: bold;
-}
-
-/**
  * Address styling not present in Safari and Chrome.
  */
 
@@ -205,9 +197,13 @@ figure {
  */
 
 hr {
-  -moz-box-sizing: content-box;
+	height: 0;
+	margin:16px 0;
+	
+	border:none;
+	border-top:1px solid #D4DEDF;
+	
   box-sizing: content-box;
-  height: 0;
 }
 
 /**

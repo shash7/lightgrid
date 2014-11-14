@@ -25,6 +25,7 @@
 html {
   font-family: helvetica, 'sans-serif';
   /* 1 */
+  font-weight: normal;
   -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
@@ -117,13 +118,6 @@ abbr[title] {
   border-bottom: 1px dotted;
 }
 /**
- * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
- */
-b,
-strong {
-  font-weight: bold;
-}
-/**
  * Address styling not present in Safari and Chrome.
  */
 dfn {
@@ -178,9 +172,11 @@ figure {
  * Address differences between Firefox and other browsers.
  */
 hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
   height: 0;
+  margin: 16px 0;
+  border: none;
+  border-top: 1px solid #D4DEDF;
+  box-sizing: content-box;
 }
 /**
  * Contain overflow in all browsers.
@@ -377,6 +373,7 @@ textarea {
   padding: 4px;
   display: inline-block;
   font-family: helvetica, 'sans-serif';
+  box-sizing: border-box;
 }
 input[type="button"],
 input[type="submit"],
@@ -384,6 +381,7 @@ button {
   padding: 4px 8px;
   background-color: #EEE;
   border: #BBB solid 2px;
+  box-sizing: border-box;
 }
 /* ----------------------------------------------------------------
  * typography.less
@@ -444,16 +442,16 @@ blockquote {
   margin-bottom: 1.375em;
 }
 /* Sanitation */
-hr {
-  border: 1px solid;
-  margin: -1px 0;
-}
 ul ul,
 ol ol,
 ul ol,
 ol ul {
   margin-top: 0;
   margin-bottom: 0;
+}
+b,
+strong {
+  font-weight: bold;
 }
 b,
 strong,
@@ -575,6 +573,9 @@ sub {
   margin-left: 93.5%;
 }
 .row [class^='col-']:last-child {
+  margin-right: 0;
+}
+.row .last {
   margin-right: 0;
 }
 /* ----------------------------------------------------------------
