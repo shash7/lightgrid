@@ -3,10 +3,11 @@
 /* ----------------------------------------------------------------
  * form.less
  * 
- * Basic form elements shim is defined here
+ * Basic form elements styling is defined here
  * ---------------------------------------------------------------- */
 
-input, select, textarea {
+// General input styles
+input, textarea {
 	margin: 0;
 	padding: 4px;
 	display: inline-block;
@@ -14,13 +15,56 @@ input, select, textarea {
 	font-family: @body-font;
 	
 	box-sizing: border-box;
+	
+	border: #DDD solid 1px;
 }
 
-input[type="button"], input[type="submit"], button {
+// Styles for all things resembling an input element
+input[type="text"], input[type="email"], input[type="password"], textarea {
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+textarea:hover {	
+}
+
+input[type="text"]:active,
+input[type="email"]:active,
+input[type="password"]:active,
+textarea:active {
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {	
+}
+
+// Styles for all things resembling a button
+input[type="button"], input[type="submit"], select, button {
 	padding: 4px 8px;
 	
 	background-color: #EEE;
 	border:#BBB solid 2px;
 	
 	box-sizing: border-box;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+select:hover,
+button:hover {
+}
+
+input[type="button"]:active,
+input[type="submit"]:active,
+select:active,
+button:active {
+}
+
+input[type="button"]:focus,
+input[type="submit"]:focus,
+select:focus,
+button:focus {
 }

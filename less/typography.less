@@ -10,54 +10,65 @@
  * The base font size is 16px, line height is 1.4 and scale factor is 1.333(perfect fourth)
  * ---------------------------------------------------------------- */
 
+@font-small: 0.8em;
 
 h1, h2, h3, h4 {
 	font-family: @header-font;
-	color: @header-color;
+	color:       @header-color;
 	font-weight: @header-font-weight;
 }
 
 h1 {
-  font-size: 2.375em;
-  line-height: 1.157894736em;
-  margin-top: 1.15789474em;
+  font-size:     2.375em;
+  line-height:   1.157894736em;
+  margin-top:    1.15789474em;
   margin-bottom: 0.8em;
 }
 
 h2 {
-  font-size: 1.75em;
-  line-height: 1.571428572em;
-  margin-top: 1.57142857em;
+  font-size:     1.75em;
+  line-height:   1.571428572em;
+  margin-top:    1.57142857em;
   margin-bottom: 0.7em;
 }
 
 h3 {
-  font-size: 1.3125em;
-  line-height: 1.047619048em;
-  margin-top: 1.04761905em;
+  font-size:     1.3125em;
+  line-height:   1.047619048em;
+  margin-top:    1.04761905em;
   margin-bottom: 0.6em;
 }
 
 h4 {
-  font-size: 1em;
-  line-height: 1.375em;
-  margin-top: 1.375em;
+  font-size:     1em;
+  line-height:   1.375em;
+  margin-top:    1.375em;
   margin-bottom: 0.5em;
 }
 
 h5 {
-	margin-top: 1em;
+	margin-top:    1em;
 	margin-bottom: 0.5em;
 }
 
 h6 {
-	margin-top: 0.8em;
+	margin-top:    0.8em;
 	margin-bottom: 0.5em;
 }
 
-p, ul, ol, pre, table, blockquote {
-  margin-top: 1.375em;
+ul, ol, pre, table, blockquote {
+  margin-top:    1.375em;
   margin-bottom: 1.375em;
+}
+
+p {
+	margin-top:    1.375em;
+  margin-bottom: 1.375em;
+}
+
+label {
+	font-weight: @body-font-weight;
+	font-size: @font-small;
 }
 
 /* Sanitation */
@@ -72,7 +83,7 @@ b, strong {
 
 b, strong, em, small, code {
   line-height: 1;
-	font-size: 0.8em;
+	font-size: @font-small;
 }
 
 sup, sub {
