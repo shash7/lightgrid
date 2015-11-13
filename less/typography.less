@@ -7,57 +7,33 @@
  * The code is taken from http://www.gridlover.net/app/ and edited to better fit with the
  * rest of the library
  * 
- * The base font size is 16px, line height is 1.4 and scale factor is 1.333(perfect fourth)
+ * The base font size is 16px, line height is 1.375 and scale factor is 1.3
  * ---------------------------------------------------------------- */
 
 
-h1, h2, h3, h4 {
-	font-family: @header-font;
-	color: @header-color;
-	font-weight: @header-font-weight;
+/*
+ * Miscelleous vars
+ */
+@font-small        : 0.8em;
+@default-font-size : 1em;
+
+
+/*
+ * Typographic resets are applied here
+ * Note that no typographic changes are applied inside normalize.less
+ */
+html {
+	font-size: @body-font-size;
+	line-height: 1;
+	font-family: @body-font;
+	color:@body-font-color;
 }
 
-h1 {
-  font-size: 2.375em;
-  line-height: 1.157894736em;
-  margin-top: 1.15789474em;
-  margin-bottom: 0.8em;
-}
-
-h2 {
-  font-size: 1.75em;
-  line-height: 1.571428572em;
-  margin-top: 1.57142857em;
-  margin-bottom: 0.7em;
-}
-
-h3 {
-  font-size: 1.3125em;
-  line-height: 1.047619048em;
-  margin-top: 1.04761905em;
-  margin-bottom: 0.6em;
-}
-
-h4 {
-  font-size: 1em;
-  line-height: 1.375em;
-  margin-top: 1.375em;
-  margin-bottom: 0.5em;
-}
-
-h5 {
-	margin-top: 1em;
-	margin-bottom: 0.5em;
-}
-
-h6 {
-	margin-top: 0.8em;
-	margin-bottom: 0.5em;
-}
-
-p, ul, ol, pre, table, blockquote {
-  margin-top: 1.375em;
-  margin-bottom: 1.375em;
+body {
+	font-size: 1em;
+	line-height: @body-line-height;
+	font-weight: @body-font-weight;
+	color:inherit;
 }
 
 /* Sanitation */
@@ -67,20 +43,127 @@ ul ul, ol ol, ul ol, ol ul {
 }
 
 b, strong {
-	font-weight: bold;
+	font-weight: @bold;
 }
 
-b, strong, em, small, code {
+i {
+	font-style: italic;
+}
+
+em, small, code {
   line-height: 1;
-	font-size: 0.8em;
+	font-size: @font-small;
 }
 
 sup, sub {
-  vertical-align: baseline;
-  position: relative;
-  top: -0.4em;
+	font-size: @font-small;
 }
 
-sub {
-  top: 0.4em;
+a {
+	text-decoration: none;
+	color: @link-color;
+	
+	&:visited {
+		color: darken(@link-color, 10%);
+	}
+	
+	&:focus {
+		outline-color: @focus-color;
+	}
+	
+	&:hover,
+	&:active {
+		color: lighten(@link-color, 10%);
+	}
+}
+
+b, strong {
+	font-weight: @bold;
+}
+
+small {
+	font-size: @font-small;
+}
+
+label {
+	font-weight: @body-font-weight;
+	font-size: @font-small;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: @code-font;
+}
+
+optgroup {
+	font-weight: @bold;
+}
+
+
+/*
+ * Paragraphs and header styles are defined here
+ */
+.paragraph() {
+	margin-top: 0;
+	margin-bottom: @body-line-height * 1em;
+	line-height: @body-line-height;
+}
+
+// Contains common styles for h1-h4
+.headings() {
+	line-height: 1;
+	font-family: @header-font;
+	font-weight: @header-font-weight;
+	color:@header-font-color;
+}
+
+.header-5() {
+	margin: @type-ratio * 1em 0 0.5em;
+	
+	line-height: @body-line-height;
+	font-size: @default-font-size;
+	font-weight: @bold;
+}
+.header-4() {
+	.headings();
+	margin: @type-ratio * 1em 0 0.5em;
+	font-size: @default-font-size * @type-ratio;
+}
+.header-3() {
+	.headings();
+	margin: @type-ratio * 1em 0 0.5em;
+	font-size: @default-font-size * pow(@type-ratio, 2);
+}
+.header-2() {
+	.headings();
+	margin: @type-ratio * 1em 0 0.5em;
+	font-size: @default-font-size * pow(@type-ratio, 3);
+}
+.header-1() {
+	.headings();
+	margin-top: 0;
+	margin-bottom: 0.5em;
+	
+	font-size: @default-font-size * pow(@type-ratio, 4);
+}
+
+h1 {
+	.header-1();
+}
+h2 {
+	.header-2();
+}
+h3 {
+	.header-3();
+}
+h4 {
+	.header-4();
+}
+h5 {
+	.header-5();
+}
+p {
+	.paragraph();
 }

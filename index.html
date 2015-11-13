@@ -23,12 +23,11 @@
 				</h1>
 				<h2 class="site-main__description">
 					A grid framework for the bold.
-					Built on top of normalize.css, less and gulp. Borrowing the best from bootstrap grids, Andy taylor's 1140px grid system and flex grids, lightgrid has got the working of a major framework but with non of the fat.
+					Built on top of normalize.css, less and gulp. Borrowing the best from bootstrap grids, Andy taylor's 1140px grid system and modular scale typography, lightgrid has got the working of a major framework but with none of the fat.
 				</h2>
 				<nav class="site-main__nav">
 					<a href="#download" class="nav__item">Download</a>
 					<a href="#docs" class="nav__item">Docs</a>
-					<a href="" class="nav__item">Download</a>
 					<a href="https://github.com/shash7/lightgrid" class="nav__item">Github</a>
 				</nav>
 			</div>
@@ -43,10 +42,10 @@
 				<p>
 					Download the latest version from github or fork the repo. Note that this version(3.x.x) contains breaking changes.
 				</p>
-				<a class="btn">
+				<a class="btn" href="https://github.com/shash7/lightgrid/archive/master.zip">
 					Download latest
 				</a>
-				<a class="btn">
+				<a class="btn" href="https://github.com/shash7/lightgrid">
 					Fork the repo
 				</a>
 			</div>
@@ -59,8 +58,11 @@
 					Philosophy
 				</h3>
 				<p>
-					Unlike other frameworks, Lightgrid was designed to be lightweight in mind. Hence, 'light'grid. Lightgrid is made to be extended. So instead of overwriting the default styles, it is recommended you extend them.
-					
+					Lightgrid is designed to be lightweight and extendable. Clocking in at 6kbs minified, lightgrid is pretty small. However the main power of lightgrid lies in extending it.
+				</p>
+				<p>
+					The best way of using lightgrid is to integrate the less files in your build system.
+					Say you want the default grid along with a grid which collapses at 480px instead of the usual 768px. In this scenario, you would create a new class, say <code>.col-md-</code> and call the <code>.grid()</code>, <code>.offset</code> and <code>.break()</code> mixins inside it.
 				</p>
 				<h3>
 					Directory structure
@@ -257,7 +259,7 @@
 					Forms
 				</h3>
 				<p>
-					Unlike the previous version, form styling has been completely removed and only the padding is present to make form elements conform to the same height everywhere.
+					Unlike the previous version, form styling has been completely removed and only a couple of styles are present to align the inputs and buttons.
 				</p>
 				<form>
 					<textarea>textarea</textarea>
@@ -287,7 +289,7 @@
 					Lightgrid was originally inspired by Andy Taylor's 1140px grid system. Since then, the web design world has come a long way and traditional grid systems have evolved as well as the frameworks powering them.
 				</p>
 				<p>
-					This project was possible by less, gulpjs, npm and bower.
+					This project was made possible by less, gulpjs, npm and bower.
 				</p>
 			</div>
 		</div>

@@ -7,26 +7,52 @@
  * ---------------------------------------------------------------- */
 
 
-// typography
-@body-font   : helvetica, 'sans-serif';
-@header-font : georgia, 'serif';
-@code-font   : monospace, monospace;
+/*
+ * @typography
+ */
+@body-font   : Verdana,Geneva,sans-serif;
+@header-font : Georgia,Times,"Times New Roman",serif;
+@code-font   : Consolas,monaco,monospace;
 
-@body-font-size   : 1em;
-@body-line-height : 1.375em;
+@body-font-size   : 16px;
+@body-line-height : 1.375; // It is recommended to define this without any units like em, px, etc
 
 @body-font-weight   : normal;
 @header-font-weight : normal;
 
+@type-ratio : 1.3;
 
-// grid
-@row-width : 100%;
+// b, strong, etc
+@bold : bold;
 
 
-// colors
-@body-color   : #444;
-@header-color : #333;
+/*
+ * @colors
+ */
+@body-font-color   : #444;
+@header-font-color : #333;
 
+@link-color  : #E74C3C;
+@focus-color : #F1C40F;
+
+// These are not dependent upon. Add your own color variables here
 @postive  : #2ECC71;
 @negative : #E74C3C;
 @neutral  : #B4B4B4;
+
+
+/*
+ * @layout
+ */
+@columns : 12;
+@gutter : 10px;
+
+
+/*
+ * @breakpoints
+ */
+@screen-xs: 320px;
+@screen-sm: 480px; // mobile devices
+@screen-md:	768px; // Currently used to break the grid
+@screen-lg:	992px; // Tablets
+@screen-xl: 1200px;

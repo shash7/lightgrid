@@ -3,24 +3,90 @@
 /* ----------------------------------------------------------------
  * form.less
  * 
- * Basic form elements shim is defined here
+ * Basic form elements styling is defined here
  * ---------------------------------------------------------------- */
 
-input, select, textarea {
-	margin: 0;
-	padding: 4px;
+
+@base-padding: 6px;
+@base-height: 38px;
+
+/*
+ * Base input styles
+ */
+input, textarea, select {
+	height: @base-height;
 	display: inline-block;
+	padding: @base-padding;
+	vertical-align: top;
+	line-height: inherit;
 	
-	font-family: @body-font;
-	
-	box-sizing: border-box;
+	&:focus {
+		outline-color: @focus-color;
+	}
 }
 
+textarea {
+	height: auto;
+}
+
+select {
+	padding: @base-padding + 2;
+	padding-bottom: @base-padding + 1;
+}
+
+// Styles for all things resembling an input element
+input[type="text"], input[type="email"], input[type="password"], textarea, select {
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+select:hover,
+textarea:hover {	
+}
+
+input[type="text"]:active,
+input[type="email"]:active,
+input[type="password"]:active,
+select:active,
+textarea:active {
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {	
+}
+
+
+/*
+ * Base button styles
+ */
 input[type="button"], input[type="submit"], button {
-	padding: 4px 8px;
+	height: @base-height;
 	
-	background-color: #EEE;
-	border:#BBB solid 2px;
+	line-height: inherit;
+	padding: @base-padding;
+	display: inline-block;
+	vertical-align: top;
 	
-	box-sizing: border-box;
+	&:focus {
+		outline-color: @focus-color;
+	}
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+button:hover {
+}
+
+input[type="button"]:active,
+input[type="submit"]:active,
+button:active {
+}
+
+input[type="button"]:focus,
+input[type="submit"]:focus,
+button:focus {
 }
