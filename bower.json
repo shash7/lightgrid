@@ -1,0 +1,5 @@
+{
+	"name": "lightgrid",
+	"version": "3.0.0",
+	"main": "./css/lightgrid.less"
+}

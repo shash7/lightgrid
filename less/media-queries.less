@@ -10,27 +10,13 @@
  * ---------------------------------------------------------------- */
 
 
-@media only screen and (min-device-width : 1px) and (max-device-width : 480px) {
-	.col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
-	.col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
-		margin:0;
-		width:100%!important;
-	}
+@media screen and (max-width : @screen-xs) {
 }
-
-@media only screen and (min-width : 481px)and (max-width : 767px) {
-	.col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
-	.col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
-		margin:0;
-		width:100%!important;
-	}
+@media screen and (max-width : @screen-sm) {
 }
-
-// Sample media queries(not used by lightgrid)
-@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
-
+@media screen and (max-width : @screen-md) {
 }
-
-@media only screen and (min-device-width : 1024px) and (max-device-width : 1200px) {
-
+@media screen and (max-width : @screen-lg) {
+}
+@media screen and (max-width : @screen-xl) {
 }
