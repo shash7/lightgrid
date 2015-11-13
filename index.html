@@ -37,9 +37,6 @@
 					Download
 				</h2>
 				<p>
-					Latest version is 3.0.0
-				</p>
-				<p>
 					Download the latest version from github or fork the repo. Note that this version(3.x.x) contains breaking changes.
 				</p>
 				<a class="btn" href="https://github.com/shash7/lightgrid/archive/master.zip">
@@ -48,6 +45,16 @@
 				<a class="btn" href="https://github.com/shash7/lightgrid">
 					Fork the repo
 				</a>
+				<br>
+				<br>
+				<p>
+					You can also pull the repo from bower:
+				</p>
+				<p>
+					<code>
+						bower install lightgridcss -S
+					</code>
+				</p>
 			</div>
 			
 			<div class="site-main site-main--full">
@@ -62,7 +69,13 @@
 				</p>
 				<p>
 					The best way of using lightgrid is to integrate the less files in your build system.
-					Say you want the default grid along with a grid which collapses at 480px instead of the usual 768px. In this scenario, you would create a new class, say <code>.col-md-</code> and call the <code>.grid()</code>, <code>.offset</code> and <code>.break()</code> mixins inside it.
+					Say you want the default grid along with a grid which collapses at 480px instead of the usual 768px. In this scenario, you would create a new class, say <code>.col-md-</code> and call the <code>.grid()</code>, <code>.offset</code> and <code>.break(480px)</code> mixins inside it.
+				</p>
+				<h5>
+					Compatibility
+				</h5>
+				<p>
+					Lightgrid is compatible in all evergreen browsers and until ie9.
 				</p>
 				<h3>
 					Directory structure
@@ -287,8 +300,7 @@
 				</h2>
 				<p>
 					Lightgrid was originally inspired by Andy Taylor's 1140px grid system. Since then, the web design world has come a long way and traditional grid systems have evolved as well as the frameworks powering them.
-				</p>
-				<p>
+					<br>
 					This project was made possible by less, gulpjs, npm and bower.
 				</p>
 			</div>
