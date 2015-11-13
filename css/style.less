@@ -1,0 +1,241 @@
+
+
+/* ----------------------------------------------------------------
+ * style.less
+ * 
+ * All custom styles are defined here
+ * ---------------------------------------------------------------- */
+
+@brand: #5ECADB;//#60D3DB;//#3498DB;//#2980B9;
+@body-font-color:#555;
+
+body {
+	font-family: 'Karla', sans-serif;
+	color:@body-font-color;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Karla', sans-serif;
+	color:#444;
+	font-weight: bold;
+}
+
+.wrapper {
+	position: relative;
+	border-left: rgba(0,0,0,0.2) solid 8px;
+}
+
+.site-main {
+	padding: 106px;
+	padding-bottom: 0;
+	padding-top: 64px;
+	width: 60%;
+	
+	box-sizing: border-box;
+	
+	&:first-child {
+		padding-top: 106px;
+	}
+	&:last-child {
+		padding-bottom: 112px;
+	}
+	
+	.site-main__title {
+		margin: 0;
+		margin-bottom: 24px;
+
+		font-size: 2.6em;
+		letter-spacing: -1px;
+		color:#333;
+	}
+	
+	.site-main__description {
+		margin: 0;
+		
+		font-size: 2.4em;
+		line-height: 1.2;
+		letter-spacing: -1px;
+	}
+	
+	.site-main__nav {
+		margin-top: 48px;
+		
+		.nav__item {
+			position: relative;
+			display: inline-block;
+			padding: 4px;
+			margin-right: 16px;
+			
+			font-weight: bold;
+			font-size: 1.2em;
+			
+			color:@body-font-color;
+			border-bottom:lighten(@brand, 5%) solid 3px;
+			
+			&:hover {
+				text-decoration: none;
+				background-color: lighten(@brand, 5%);
+				color:#FFF;
+			}
+			
+			&:active {
+				background-color: @brand;
+				border-color: @brand;
+				color:#FFF;
+			}
+		}
+	}
+}
+
+.site-main--full {
+	width: 100%;
+	
+	.site-main__title {
+		display: inline-block;
+		font-size: 2.2em;
+		
+		&:after {
+			display: block;
+			content:'';
+			width: 100%	;
+			height: 2px;
+			background-color: #444;
+		}
+	}
+}
+
+.btn {
+	display: inline-block;
+	padding: 8px 24px;
+	
+	font-weight: bold;
+	background-color: @brand;
+	color:#FFF;
+	
+	&:hover {
+		background-color: lighten(@brand, 10%);
+	}
+	
+	&:visited {
+		color: #FFF;
+	}
+	
+	&:hover,
+	&:active {
+		color: #FFF;
+	}
+}
+
+code {
+	padding: 2px 4px;
+	
+	border: #555 solid 1px;
+	border-radius: 2px;
+}
+
+.directory {
+	padding: 8px;
+	background-color: rgba(0,0,0,0.05);
+	border: #555 solid 1px;
+	border-radius: 2px;
+	
+	box-shadow: inset 0 1px 1px #FFF, 0 1px 1px #EEE;
+	
+	
+	li {
+		display: inline-block;
+		
+		padding: 2px 4px;
+		font-family: monospace;
+		font-size: 0.8em;
+		
+		background-color: #FFF;
+		border: #555 solid 1px;
+		border-radius: 2px;
+	}
+}
+
+.row {
+	background-color: lighten(@brand, 30%);
+}
+
+[class^=col-] > div,
+[class^=offset-] > div {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	padding: 8px 4px;
+	
+	color:#FFF;
+	background-color: lighten(@brand, 5%);
+	text-align: center;
+	
+	border:darken(@brand, 10%) solid 2px;
+}
+
+
+
+
+
+
+
+
+
+/* Massive screens */
+@media only screen and (min-width : 1201px) {
+	.wrapper {
+		border-color: lighten(@brand, 30%);
+	}
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.wrapper {
+		border-color: lighten(@brand, 25%);
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.wrapper {
+		border-color: lighten(@brand, 20%);
+	}
+	
+	.site-main {
+		width: 80%;
+		padding: 48px;
+		padding-bottom: 0;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.wrapper {
+		border-color: lighten(@brand, 15%);
+	}
+	
+	.site-main {
+		width: 100%;
+	}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+	.wrapper {
+		border-color: lighten(@brand, 10%);
+	}
+	
+	.site-main {
+		padding: 32px;
+		padding-bottom: 0;
+		padding-top: 24px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.wrapper {
+		border-color: lighten(@brand, 5%);
+	}
+}
