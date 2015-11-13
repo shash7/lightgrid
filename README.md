@@ -1,6 +1,6 @@
 # Lightgrid
 
-### Version 2.0.1
+### Version 3.0.0
 
 [shash7.github.com/lightgrid](http://shash7.github.com/lightgrid)
 
@@ -20,6 +20,14 @@ Eg: div class='col-6 offset-2'
 Adding .limit to .row class will limit the max width of .row to 1440px.
 
 For more information, refer to the index.html provided in the repo.
+
+###3.0.0
+- Major rewrite of the grid system
+- More control over typography now. Can use ratios in typography now.
+- Changes default font stack. Now header font is in georgia and body font is in tahoma
+- Used latest normalize.css at the date of commit.
+- Added a few mixins
+- Other minor changes
 
 ###2.0.1
 - Added .last class for edge cases
