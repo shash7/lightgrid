@@ -4,6 +4,11 @@
 
 [shash7.github.com/lightgrid](http://shash7.github.com/lightgrid)
 
+####Installation
+
+<code>
+bower install lightgridcss -S
+</code>
 
 A simple no-brainer fluid css grid system to use in your project.
 It's aim is to remove the clutter and provide a simple but fluid grid.
